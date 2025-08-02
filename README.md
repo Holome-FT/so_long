@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a 2D game developed as part of the so_long project at 42. Its purpose is to work on textures, sprites and other basic game elements.
+This project is a 2D game developed as part of the [so_long](https://cdn.intra.42.fr/pdf/pdf/168864/en.subject.pdf) project at 42. Its purpose is to work on textures, sprites and other basic game elements.
 
 The project use the school’s graphical library: [MiniLibX](https://cdn.intra.42.fr/document/document/35895/minilibx-linux.tgz). This library was developed internally and includes basic necessary tools to open a window, create images and deal with keyboard and mouse events.
 
