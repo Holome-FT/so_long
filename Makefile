@@ -6,7 +6,7 @@
 #    By: raamayri <raamayri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/29 18:33:52 by raamayri          #+#    #+#              #
-#    Updated: 2025/08/02 20:28:20 by raamayri         ###   ########.fr        #
+#    Updated: 2025/08/04 13:48:36 by raamayri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ INCS = incs/ \
 OBJS = $(patsubst srcs/%.c, objs/%.o, $(SRCS))
 DEPS = $(patsubst objs/%.o, deps/%.d, $(OBJS))
 
--include $(DEPS)
+.PHONY: all clean fclean re
 
 ifneq ($(shell uname -s), Linux)
     $(error Error: This project can only be built on Linux)
@@ -94,4 +94,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+-include $(DEPS)
